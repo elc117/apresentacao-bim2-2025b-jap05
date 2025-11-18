@@ -10,11 +10,11 @@ class Conta {
         return saldo;
     }
 
-    public void deposita(float valor) {
+    public synchronized void deposita(float valor) {
         saldo += valor;
     }
 
-    public void retira(float valor) {
+    public synchronized void retira(float valor) {
         saldo -= valor;
     }
 
